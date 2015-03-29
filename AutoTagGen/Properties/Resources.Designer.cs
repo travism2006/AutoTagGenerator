@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AutoTagGen.Properties
-{
-
-
+namespace AutoTagGen.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -22,49 +22,113 @@ namespace AutoTagGen.Properties
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("AutoTagGen.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to module 1 adds:
+        ///	 - download tags for &lt;a&gt;
+        ///	 - media tag attribute for &lt;a&gt;
+        ///	 - adds &lt;caption&gt;&lt;/caption&gt;
+        ///
+        ///	 changes:
+        ///	&gt; Ui to tabbed pages.
+        /// </summary>
+        internal static string extensions_and_modules_for_automated_tag_generator {
+            get {
+                return ResourceManager.GetString("extensions_and_modules_for_automated_tag_generator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to # AutoTagGenerator
+        ///
+        ///Interface for automating tag generation for (X)HTML.
+        ///
+        ///
+        ///
+        ///-----------------------
+        ///
+        ///Author: Travis Mitchum, 
+        ///Date (started): March 28, 2015,
+        ///
+        ///Current Version: 1.0,
+        ///
+        ///Language used: (Visual) C#,
+        ///
+        ///Development Environment: Visual Studio (Community) 2013
+        ///
+        ///-----------------------
+        ///
+        ///Note: This is for educational use mostly*
+        ///
+        ///-----------------------
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///General Purpose
+        ///
+        ///=======================
+        ///
+        ///Using the Automated Tag Generator, a user may 
+        ///accelerate
+        ///time spent writing/editing (X) [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string readme {
+            get {
+                return ResourceManager.GetString("readme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tag Generator log=
+        ///[radioButtonSelected, betweenTagsValue, outputParagraphTextField.Text, assocAttributes]
+        ///^check again
+        ///
+        ///
+        ///
+        ///.
+        /// </summary>
+        internal static string Tag_Generator_log {
+            get {
+                return ResourceManager.GetString("Tag_Generator_log", resourceCulture);
             }
         }
     }
